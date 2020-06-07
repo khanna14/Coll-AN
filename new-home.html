@@ -1,0 +1,59 @@
+<html> 
+<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title> College </title>
+<link href="new-style.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+	<div class="row">
+		<div class="logo">
+		<button class="tablinks active" onclick="tab(event,'Home')" id="defaultOpen" style="float:left"><img src="download.png" onclick="tab(event,'Home')" id="defaultOpen" style="float:left"></button>>
+		</div>
+		<div class="main-nav">
+			<button class="tablinks active" onclick="tab(event,'Home')" id="defaultOpen"> HOME </button>
+			<button class="tablinks" onclick="tab(event,'Clubs')"> CLUBS </button>
+			<button class="tablinks" onclick="tab(event,'MySpace')"> MY SPACE </button>
+		</div>
+	</div>
+	<div id="Home" class="tabcontent">
+		<div id="Div" class="to-do">
+			<h2>My To Do List</h2>
+			<input type="text" id="myInput" placeholder="Write here">
+			<inpuy type="text " id="time" placeholder="time">
+			<span onclick="newElement()" class="addBtn">Add</span>
+		</div>
+		<ul id="UL">
+		<li></li>
+		</ul>
+		
+		<div id="tt">
+			<h2>TimeTable</h2>
+			<ul id="ll">
+			<li contenteditable="true"></li>
+			<li contenteditable="true"></li>
+			<li contenteditable="true"></li>
+			<li contenteditable="true"></li>
+			<li contenteditable="true"></li>
+			<li contenteditable="true"></li>
+			<li contenteditable="true"></li>
+			<li contenteditable="true"></li>
+			<li contenteditable="true"></li>
+			<li contenteditable="true"></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="Clubs" class="tabcontent">
+	<p>hi</p>
+	</div>
+	
+	<div id="MySpace" class="tabcontent">
+	<p>bye</p>
+	</div>
+		
+	<script src="home.js"></script>
+
+</body>
+</html>

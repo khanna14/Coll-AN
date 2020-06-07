@@ -1,0 +1,248 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	/* overflow: auto; */
+	/* resize: horizontal; */
+}
+
+body
+{
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(wall15.jpg);
+	height: 100%;
+	margin: 0;
+	background-size: cover;
+	background-position: center;
+	/* overflow: auto; */
+	/* resize: both; */
+}
+.row
+{
+	max-height: 100px;
+	margin: auto;
+}
+
+.main-nav
+{
+	/* overflow: hidden; */
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+/* .main-nav */
+{
+	 display: inline-block;
+}
+
+.tablinks
+{
+	background-color: Transparent;
+	color: white;
+	border: none;
+	outline-color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+}
+
+.main-nav button.active
+{
+	border: 1px solid white;
+}
+
+.main-nav button:hover
+{
+	border: 1px solid white;
+	Transition: 2s;
+}
+
+
+.logo img
+{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+.tabcontent{
+	color: white;
+	display: none;
+	padding: 100px 20px;
+	border: none;
+	border-top: none;
+	max-height: 550;
+
+}
+
+#home{
+	top: 150;
+	position: fixed;
+	box-sizing: border-box;
+	right:0px;
+	border: none;
+	padding: 0 20 0 0;
+}
+
+/* Remove margins and padding from the list */
+#UL {
+	/* float: right; */
+	/* width: 340; */
+	margin: 0;
+	padding: 0;
+	width: 350;
+	list-style-type: none;
+	resize: both;
+	overflow: auto;
+	max-height: 425;
+}
+
+/* Style the list items */
+#UL li {
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	background: #000820;
+	font-size: 18px;
+	transition: 0.2s;
+	box-sizing: border-box;
+
+	/* make the list items unselectable */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#UL li:nth-child(even) {
+  background: #01394B;
+}
+
+
+/* Darker background-color on hover */
+#UL li:hover {
+	background:  #000820;
+}
+
+/* When clicked on, add a background color and strike out text */
+#UL li.checked {
+	background:  transparent;
+	color: #7F7F7F;
+	text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+#UL li.checked::before {
+	content: '';
+	position: absolute;
+	background-color: transparent;
+	border-color: white;
+	border-style: solid;
+	border-width: 0 2px 2px 0;
+	top: 10px;
+	left: 16px;
+	transform: rotate(45deg);
+	height: 15px;
+	width: 7px;
+}
+
+/* Style the close button */
+#UL .close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+	background-color: #f44336;
+	color: white;
+}
+.to-do h2{
+	font-size: 40;
+}
+/* Style the header */
+.to-do {
+	background-image: url(wall30.jpg);
+	padding: 10px 20px;
+	color: white;
+	text-align: center;
+}
+
+/* Clear floats after the header */
+.to-do:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Style the input */
+input {
+	margin: 0;
+	border: none;
+	border-radius: 0;
+	width: 70%;
+	padding: 10px;
+	float: left;
+	font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+	padding: 10px;
+	width: 20%;
+	background: #f44336;
+	color: white;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.1s;
+	border-radius: 0;
+}
+
+.addBtn:hover {
+	background-color: #ff5722;
+}
+
+#tt{
+	position: fixed;
+	right: 390px;
+	top: 150px;
+	padding: 0 0 0 40;
+	width: 280px;
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(wall20.jpg);
+	background-size: cover;
+	background-position: center;
+	overflow: auto;
+	max-height: 530;
+}
+
+#tt h2{
+	left: 0;
+	font-size: 50;
+	height: 30;
+	font-family: sans-serif;
+}
+#ll{
+	margin-top: 50;
+	left: 0;
+	list-style-type: upper-roman;
+	
+}
+
+#ll li{
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 5px;
+	font-size: 18px;
+	transition: 0.2s;
+	box-sizing: border-box;
+}
+
+#ll .close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 12px 16px 12px 16px;
+}
